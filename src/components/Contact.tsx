@@ -178,24 +178,6 @@ Message: ${formData.message}`;
                 </div>
                 
                 <div>
-                  <label htmlFor="project" className="block text-sm font-medium mb-1">Project Type</label>
-                  <select
-                    id="project"
-                    name="project"
-                    value={formData.project}
-                    onChange={handleChange}
-                    className="w-full p-2 rounded-md bg-white/5 border border-white/10 text-white"
-                  >
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Exhaust Hood Systems">Exhaust Hood Systems</option>
-                    <option value="Worktables & Prep Stations">Worktables & Prep Stations</option>
-                    <option value="Sinks & Washing Stations">Sinks & Washing Stations</option>
-                    <option value="Equipment Stands">Equipment Stands</option>
-                    <option value="Custom Project">Custom Project</option>
-                  </select>
-                </div>
-                
-                <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-1">Project Details</label>
                   <Textarea
                     id="message"
