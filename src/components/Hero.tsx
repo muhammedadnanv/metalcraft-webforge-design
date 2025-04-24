@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
@@ -15,12 +14,12 @@ const Hero = () => {
               Meticulously crafted commercial kitchen equipment tailored to your exact specifications. Built for performance, durability, and efficiency.
             </p>
             
-            <div className="flex flex-wrap gap-4">
-              <a href="#contact" className="btn-primary">
-                Request a Quote <ArrowRight size={18} />
-              </a>
-              <a href="#portfolio" className="btn-outline">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a href="#portfolio" className="btn-primary">
                 View Our Work
+              </a>
+              <a href="#contact" className="btn-outline">
+                Request a Quote
               </a>
             </div>
           </div>

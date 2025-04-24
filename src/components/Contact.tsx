@@ -1,10 +1,11 @@
-
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+
+const WHATSAPP_NUMBER = '971506771566'; // Number format for WhatsApp API
 
 const Contact = () => {
   const { toast } = useToast();
@@ -27,22 +28,37 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Quote Request Sent",
-        description: "We'll get back to you within 24 hours.",
-      });
-      setIsSubmitting(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        message: '',
-        project: 'General Inquiry'
-      });
-    }, 1500);
+    // Prepare WhatsApp message
+    const message = `New Quote Request:\n
+Name: ${formData.name}\n
+Email: ${formData.email}\n
+Phone: ${formData.phone}\n
+Company: ${formData.company}\n
+Project Type: ${formData.project}\n
+Message: ${formData.message}`;
+
+    // Encode the message for WhatsApp URL
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+    // Open WhatsApp in a new window
+    window.open(whatsappUrl, '_blank');
+
+    toast({
+      title: "Quote Request Ready",
+      description: "Redirecting you to WhatsApp to send your request.",
+    });
+
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      company: '',
+      message: '',
+      project: 'General Inquiry'
+    });
+    setIsSubmitting(false);
   };
 
   return (
