@@ -1,5 +1,5 @@
 
-import { Sink, AirVent, Table, Fridge } from 'lucide-react';
+import { ShowerHead, Table2, Refrigerator, BadgeDollarSign } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface ServiceCardProps {
@@ -7,14 +7,18 @@ interface ServiceCardProps {
   description: string;
   icon: React.ReactNode;
   className?: string;
+  animationDelay?: string;
 }
 
-const ServiceCard = ({ title, description, icon, className }: ServiceCardProps) => {
+const ServiceCard = ({ title, description, icon, className, animationDelay }: ServiceCardProps) => {
   return (
-    <div className={cn(
-      "p-6 rounded-lg border border-gray-200 transition-all hover:shadow-lg hover:border-accent-orange/30",
-      className
-    )}>
+    <div 
+      className={cn(
+        "p-6 rounded-lg border border-gray-200 transition-all hover:shadow-lg hover:border-accent-orange/30",
+        className
+      )}
+      style={{ animationDelay }}
+    >
       <div className="p-3 bg-accent-orange/10 rounded-full w-fit mb-4">
         <div className="text-accent-orange">{icon}</div>
       </div>
@@ -29,22 +33,22 @@ const Services = () => {
     {
       title: "Exhaust Hood Systems",
       description: "Custom ventilation solutions designed for efficiency and code compliance, including Type I and Type II hoods with integrated fire suppression systems.",
-      icon: <AirVent size={24} />
+      icon: <ShowerHead size={24} />
     },
     {
       title: "Worktables & Prep Stations",
       description: "Durable stainless steel work surfaces built for your specific space, workflow needs, and budget with customizable shelving and storage options.",
-      icon: <Table size={24} />
+      icon: <Table2 size={24} />
     },
     {
       title: "Sinks & Washing Stations",
       description: "Commercial-grade hand wash sinks, compartment sinks, and pot washing stations with seamless construction and proper drainage systems.",
-      icon: <Sink size={24} />
+      icon: <BadgeDollarSign size={24} />
     },
     {
       title: "Equipment Stands",
       description: "Heavy-duty stands for ovens, refrigerators, and other equipment with reinforced construction to support substantial weight requirements.",
-      icon: <Fridge size={24} />
+      icon: <Refrigerator size={24} />
     }
   ];
 
@@ -66,7 +70,7 @@ const Services = () => {
               description={service.description}
               icon={service.icon}
               className="reveal-animation"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              animationDelay={`${index * 0.1}s`}
             />
           ))}
         </div>
