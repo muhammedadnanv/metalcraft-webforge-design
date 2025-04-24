@@ -1,4 +1,3 @@
-
 import { Facebook, Twitter, Instagram, Linkedin, ArrowUp, MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -8,13 +7,13 @@ const Footer = () => {
 
   const mobileNumbers = [
     '+971 554610350',
-    '+971 506771566',
+    '+971 506771566', 
     '+971 508937800'
   ];
 
   const serviceAreas = [
     'Ras Al Khaimah',
-    'Abu Dhabi',
+    'Abu Dhabi', 
     'Dubai',
     'Sharjah'
   ];
