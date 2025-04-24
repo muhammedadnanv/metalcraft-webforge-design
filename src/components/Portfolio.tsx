@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -18,45 +17,45 @@ const Portfolio = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Luxury Hotel Kitchen",
-      category: "Hotel",
-      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
-      description: "Complete stainless steel kitchen installation for a five-star hotel"
+      title: "Commercial Gas Range",
+      category: "Restaurant",
+      image: "/lovable-uploads/43985ca5-73bc-4ba7-a8af-32b29632e08b.png",
+      description: "Heavy-duty stainless steel gas range with multiple burners for commercial kitchens"
     },
     {
       id: 2,
-      title: "Gourmet Restaurant",
+      title: "Shawarma Machine",
       category: "Restaurant",
-      image: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb",
-      description: "Custom prep stations and specialized cooking equipment"
+      image: "/lovable-uploads/762074dc-fa0d-410a-9f71-d6342ee2a358.png",
+      description: "Double vertical broiler machine with temperature control and durable construction"
     },
     {
       id: 3,
-      title: "Urban Food Truck",
-      category: "Food Truck",
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
-      description: "Compact, high-efficiency mobile kitchen setup"
+      title: "High-Power Burner",
+      category: "Restaurant",
+      image: "/lovable-uploads/d48466e8-7820-4afa-8121-c2e5e41076d1.png",
+      description: "Professional-grade single burner with brass valves and sturdy frame"
     },
     {
       id: 4,
-      title: "Corporate Cafeteria",
-      category: "Cafeteria",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-      description: "Large-scale serving line and high-volume preparation area"
+      title: "Utility Cart",
+      category: "Hotel",
+      image: "/lovable-uploads/a10759ee-61db-42e9-ad56-19280babe4ce.png",
+      description: "Multi-level stainless steel cart with wheels for kitchen transport"
     },
     {
       id: 5,
-      title: "Boutique Bistro",
+      title: "Commercial Grill",
       category: "Restaurant",
-      image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511",
-      description: "Custom display kitchen with specialized workstations"
+      image: "/lovable-uploads/54a10075-98d0-497e-a2d4-44952a37ad80.png",
+      description: "Professional griddle with temperature controls and durable construction"
     },
     {
       id: 6,
-      title: "University Dining Hall",
-      category: "Cafeteria",
-      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334",
-      description: "High-capacity production kitchen with modular serving areas"
+      title: "Gas Cooking Station",
+      category: "Restaurant",
+      image: "/lovable-uploads/38cf500c-40f0-40bd-8d58-336afe405bed.png",
+      description: "Multi-burner cooking range with high-efficiency burners and storage"
     }
   ];
   
