@@ -25,7 +25,7 @@ const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="flex items-center">
           <span className="text-2xl font-bold font-poppins text-matte-black">
-            <span className="text-accent-orange">Jawad</span> Metal Works
+            <span className="text-accent-orange">Jawad</span> Metal Works LLC
           </span>
         </a>
 

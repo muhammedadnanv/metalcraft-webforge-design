@@ -6,19 +6,37 @@ const About = () => {
     <section id="about" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About <span className="text-accent-orange">Jawad Metal Works</span></h2>
-          <p className="text-steel-blue/80 max-w-2xl mx-auto">
-            Building exceptional commercial kitchen equipment with precision engineering and attention to detail since 2008.
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About <span className="text-accent-orange">Jawad Metal Works LLC</span></h2>
+          <p className="text-steel-blue/80 max-w-3xl mx-auto">
+            Custom stainless steel fabrication solutions for commercial kitchens and food service industries.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <h3 className="text-2xl font-bold mb-4">Craftsmanship Meets Modern Technology</h3>
-            
-            <p className="text-steel-blue/80 mb-6">
-              At Jawad Metal Works, we combine traditional metalworking expertise with cutting-edge fabrication technology to deliver commercial kitchen equipment that exceeds industry standards. Our team of skilled artisans and engineers work closely with clients to understand their unique requirements and create solutions that optimize workflow and efficiency.
-            </p>
+            <div className="text-steel-blue/80 mb-6 space-y-4">
+              <p>
+                JAWAD Metal Works is a fast growing company engaged in the manufacture,
+                fabrication, supply and installation of stainless steel equipments and furnishings meeting
+                the requirements of commercial and industrial kitchens, food catering units, restaurants,
+                cafeterias, hotels, hospitals, super markets, bakeries, fish processing units etc.
+              </p>
+              
+              <p>
+                Under the supervision and guidance of highly experienced and technically proficient
+                professionals with vast experience in the field of stainless steel fabrication for more than
+                20 years, JAWAD has served many satisfied customers throughout UAE. Our products
+                have been widely accepted and sought after. JAWAD is committed to high standards of
+                quality and perfection with a sense of aestheticism.
+              </p>
+              
+              <p>
+                JAWAD is occupying a large warehouse in Jurf Industrial Area, Ajman with sufficient
+                machineries and infrastructure. JAWAD is proud to have highly experienced and
+                dedicated technicians and skilled workers who can fabricate virtually any custom
+                equipment as per designs and specifications.
+              </p>
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {[

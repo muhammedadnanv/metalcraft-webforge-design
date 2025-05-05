@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="reveal-animation">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-matte-black mb-4">
-              Premium Custom <span className="text-accent-orange">Kitchen Fabrication</span>
+              <span className="text-accent-orange">Premium customized stainless steel equipment</span> for commercial kitchen and food industry
             </h1>
             
             <p className="text-lg text-steel-blue mb-8 max-w-lg">

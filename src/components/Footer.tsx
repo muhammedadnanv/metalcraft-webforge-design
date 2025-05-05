@@ -1,3 +1,4 @@
+
 import { Facebook, Twitter, Instagram, Linkedin, ArrowUp, MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -23,9 +24,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Jawad Metal Works</h3>
+            <h3 className="text-xl font-bold mb-4">Jawad Metal Works LLC</h3>
             <p className="text-white/80 mb-4">
-              Premium custom fabrication for commercial kitchens, built with precision and excellence.
+              Premium customized stainless steel equipment for commercial kitchen and food industry.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-accent-orange transition-colors">
@@ -93,7 +94,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left space-y-2">
-              <p>© {new Date().getFullYear()} Jawad Metal Works. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Jawad Metal Works LLC. All rights reserved.</p>
               <p className="text-white/80">
                 Developed by{' '}
                 <a 
