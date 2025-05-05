@@ -1,5 +1,7 @@
+
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const categories = ["All", "Restaurant", "Hotel", "Food Truck", "Cafeteria"];
 
@@ -13,6 +15,7 @@ interface Project {
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const isMobile = useIsMobile();
   
   const projects: Project[] = [
     {
@@ -66,20 +69,20 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="section-padding bg-white">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our <span className="text-accent-orange">Projects</span></h2>
-          <p className="text-steel-blue/80 max-w-2xl mx-auto">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our <span className="text-accent-orange">Projects</span></h2>
+          <p className="text-steel-blue/80 max-w-2xl mx-auto px-4 sm:px-0">
             Explore our portfolio of custom fabrication projects for commercial kitchens across various industries.
           </p>
         </div>
         
-        <div className="flex flex-wrap justify-center gap-2 mb-8">
+        <div className="flex flex-wrap justify-center gap-2 mb-6 md:mb-8 px-2">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-4 py-2 rounded-full text-sm font-medium transition-all",
+                "px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all",
                 activeCategory === category 
                   ? "bg-accent-orange text-white" 
                   : "bg-gray-100 text-steel-blue hover:bg-gray-200"
@@ -90,31 +93,32 @@ const Portfolio = () => {
           ))}
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-4 sm:px-0">
           {filteredProjects.map((project) => (
             <div 
               key={project.id} 
               className="group overflow-hidden rounded-lg bg-gray-50 border border-gray-200 transition-all hover:shadow-lg"
             >
-              <div className="h-64 overflow-hidden">
+              <div className="h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
                 />
               </div>
-              <div className="p-4">
+              <div className="p-3 sm:p-4">
                 <span className="text-xs font-medium bg-accent-orange/10 text-accent-orange px-2 py-1 rounded-full">
                   {project.category}
                 </span>
-                <h3 className="text-xl font-bold mt-2 mb-1">{project.title}</h3>
-                <p className="text-steel-blue/80 text-sm">{project.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold mt-2 mb-1">{project.title}</h3>
+                <p className="text-steel-blue/80 text-xs sm:text-sm">{project.description}</p>
               </div>
             </div>
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 md:mt-12">
           <a href="#contact" className="btn-outline">
             Discuss Your Project
           </a>

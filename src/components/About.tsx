@@ -5,16 +5,16 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-white">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About <span className="text-accent-orange">Jawad Metal Works LLC</span></h2>
-          <p className="text-steel-blue/80 max-w-3xl mx-auto">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">About <span className="text-accent-orange">Jawad Metal Works LLC</span></h2>
+          <p className="text-steel-blue/80 max-w-3xl mx-auto px-4 sm:px-0">
             Custom stainless steel fabrication solutions for commercial kitchens and food service industries.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center px-4 sm:px-0">
           <div className="order-2 lg:order-1">
-            <div className="text-steel-blue/80 mb-6 space-y-4">
+            <div className="text-steel-blue/80 mb-6 space-y-4 text-sm sm:text-base">
               <p>
                 JAWAD Metal Works is a fast growing company engaged in the manufacture,
                 fabrication, supply and installation of stainless steel equipments and furnishings meeting
@@ -38,7 +38,7 @@ const About = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
               {[
                 "NSF Certified Products",
                 "Custom Sizing Available",
@@ -48,35 +48,38 @@ const About = () => {
                 "Compliance with Health Codes"
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
-                  <CheckCircle size={20} className="text-accent-orange" />
-                  <span>{item}</span>
+                  <CheckCircle size={16} className="text-accent-orange flex-shrink-0" />
+                  <span className="text-sm sm:text-base">{item}</span>
                 </div>
               ))}
             </div>
             
-            <a href="#services" className="btn-secondary">
+            <a href="#services" className="btn-secondary inline-block">
               Discover Our Services
             </a>
           </div>
           
-          <div className="order-1 lg:order-2 grid grid-cols-2 gap-4">
+          <div className="order-1 lg:order-2 grid grid-cols-2 gap-3 sm:gap-4">
             <div>
               <img 
                 src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb" 
                 alt="Metal fabrication process" 
                 className="rounded-lg shadow-lg h-full w-full object-cover"
+                loading="lazy"
               />
             </div>
-            <div className="grid grid-rows-2 gap-4">
+            <div className="grid grid-rows-2 gap-3 sm:gap-4">
               <img 
                 src="https://images.unsplash.com/photo-1460574283810-2aab119d8511" 
                 alt="Quality steel materials" 
                 className="rounded-lg shadow-lg h-full w-full object-cover"
+                loading="lazy"
               />
               <img 
                 src="https://images.unsplash.com/photo-1487958449943-2429e8be8625" 
                 alt="Commercial kitchen installation" 
                 className="rounded-lg shadow-lg h-full w-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
