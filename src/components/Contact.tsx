@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -80,7 +81,11 @@ Message: ${formData.message}`;
                 </div>
                 <div>
                   <h3 className="font-bold text-xl">Call Us</h3>
-                  <p className="text-white/80">(555) 123-4567</p>
+                  <p className="text-white/80">Mobile Numbers:</p>
+                  <p className="text-white/80">+971 554610350</p>
+                  <p className="text-white/80">+971 506771566</p>
+                  <p className="text-white/80">+971 508937800</p>
+                  <p className="text-white/80">Landline: +971 6 565 1865</p>
                 </div>
               </div>
               
@@ -90,7 +95,7 @@ Message: ${formData.message}`;
                 </div>
                 <div>
                   <h3 className="font-bold text-xl">Email Us</h3>
-                  <p className="text-white/80">info@jawadmetalworks.com</p>
+                  <p className="text-white/80">jawadmetals@gmail.com</p>
                 </div>
               </div>
               
@@ -100,7 +105,7 @@ Message: ${formData.message}`;
                 </div>
                 <div>
                   <h3 className="font-bold text-xl">Visit Our Workshop</h3>
-                  <p className="text-white/80">1234 Fabrication Lane<br />Industry City, ST 12345</p>
+                  <p className="text-white/80">Address, Ajman 100011, Al Ajman, United Arab Emirates</p>
                 </div>
               </div>
             </div>
