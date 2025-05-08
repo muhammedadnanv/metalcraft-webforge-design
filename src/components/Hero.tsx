@@ -1,12 +1,17 @@
+
 import { ArrowRight } from 'lucide-react';
 const Hero = () => {
   return <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-to-b from-gray-100 to-white relative overflow-hidden">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="reveal-animation px-4 sm:px-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-matte-black mb-4 leading-tight">
-              <span className="text-accent-orange">Premium customized stainless steel equipment</span> for commercial kitchen and food industry
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-matte-black mb-2 leading-tight">
+              <span className="text-accent-orange">Premium customized stainless steel equipment</span>
             </h1>
+            
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-steel-blue mb-4">
+              for commercial kitchen and food industry
+            </h3>
             
             <p className="text-base sm:text-lg text-steel-blue mb-8 max-w-lg">
               Meticulously crafted commercial kitchen equipment tailored to your exact specifications. Built for performance, durability, and efficiency.
