@@ -1,9 +1,6 @@
-
 import { ArrowRight } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-to-b from-gray-100 to-white relative overflow-hidden">
+  return <section className="pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-to-b from-gray-100 to-white relative overflow-hidden">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="reveal-animation px-4 sm:px-0">
@@ -25,13 +22,11 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="relative reveal-animation px-4 sm:px-0" style={{ animationDelay: '0.3s' }}>
+          <div className="relative reveal-animation px-4 sm:px-0" style={{
+          animationDelay: '0.3s'
+        }}>
             <div className="bg-metal-silver/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 md:p-8 border border-metal-silver/30 shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" 
-                alt="Premium metal fabrication" 
-                className="rounded-lg w-full h-auto object-cover"
-              />
+              <img alt="Premium metal fabrication" className="rounded-lg w-full h-auto object-cover" src="/lovable-uploads/716620fc-9de7-4155-9ce6-d8fc9cbbf5d1.png" />
               
               <div className="mt-6 grid grid-cols-3 gap-2 sm:gap-4">
                 <div className="text-center">
@@ -59,8 +54,6 @@ const Hero = () => {
       {/* Background decorative elements */}
       <div className="absolute top-1/4 right-0 w-1/3 h-1/3 bg-metal-silver/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-1/2 h-1/3 bg-accent-orange/5 rounded-full blur-3xl"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
