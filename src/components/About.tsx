@@ -16,7 +16,7 @@ const About = () => {
               
               <p>Under the supervision and guidance of highly experienced and technically proficient professionals with vast experience in the field of stainless steel fabrication for more than 20 years, JAWAD Metal Works LLC has served many satisfied customers throughout UAE. Our products have been widely accepted and sought after. JAWAD is committed to high standards of quality and perfection with a sense of aestheticism.</p>
               
-              <p>JAWAD is occupying a large warehouse in  Industrial Area,New Lucky rounde Ajman with sufficient machineries and infrastructure. JAWAD Metal Works LLC is proud to have highly experienced and dedicated technicians and skilled workers who can fabricate virtually any custom equipment as per designs and specifications.</p>
+              <p>JAWAD Metal Works LLC is occupying a large warehouse in  Industrial Area,New Lucky rounde Ajman with sufficient machineries and infrastructure. JAWAD Metal Works LLC is proud to have highly experienced and dedicated technicians and skilled workers who can fabricate virtually any custom equipment as per designs and specifications.</p>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
