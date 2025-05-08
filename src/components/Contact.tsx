@@ -110,6 +110,21 @@ Message: ${formData.message}`;
               </div>
             </div>
 
+            {/* Google Maps */}
+            <div className="mt-8 rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7382971.7894349545!2d45.721883625000004!3d25.372432700000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f9d04ec8c0a9%3A0x45c2de6d89b04261!2sJawad%20Metal%20Works%20LLC!5e0!3m2!1sen!2sin!4v1746719396152!5m2!1sen!2sin" 
+                width="100%" 
+                height="300" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Jawad Metal Works LLC Location"
+                className="rounded-lg shadow-lg"
+              ></iframe>
+            </div>
+
             <div className="mt-8 p-6 bg-white/5 rounded-lg">
               <h3 className="font-bold text-xl mb-4">Business Hours</h3>
               <div className="space-y-2">
