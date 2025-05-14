@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
 
-const categories = ["All", "Restaurant", "Hotel", "Food Truck", "Cafeteria"];
+const categories = ["All", "Restaurant", "Hotel", "Food Truck", "Cafeteria", "Supermarket"];
 
 interface Project {
   id: number;
@@ -59,6 +59,34 @@ const Portfolio = () => {
       category: "Restaurant",
       image: "/lovable-uploads/38cf500c-40f0-40bd-8d58-336afe405bed.png",
       description: "Multi-burner cooking range with high-efficiency burners and storage"
+    },
+    {
+      id: 7,
+      title: "Fruit Display Unit",
+      category: "Supermarket",
+      image: "/lovable-uploads/fe8034d2-b8ad-4c92-90a4-5ec0a8b51296.png",
+      description: "Custom fruit display stand with stainless steel trays for supermarkets and grocery stores"
+    },
+    {
+      id: 8,
+      title: "Vegetable Display Rack",
+      category: "Supermarket",
+      image: "/lovable-uploads/f00fba22-7c80-44df-acab-a19e573f15aa.png",
+      description: "Multi-tier vegetable display showcase with adjustable shelving for retail stores"
+    },
+    {
+      id: 9,
+      title: "Produce Display System",
+      category: "Supermarket",
+      image: "/lovable-uploads/51a0a9c0-8742-47c9-965c-c02bddaa1381.png",
+      description: "Durable produce display fixture with perforated shelves for optimal airflow"
+    },
+    {
+      id: 10,
+      title: "Premium Supermarket Display",
+      category: "Supermarket",
+      image: "/lovable-uploads/d50b2289-825f-48c4-8c74-d65f6d3285b0.png",
+      description: "High-end supermarket produce display system with multiple tiered shelves"
     }
   ];
   
