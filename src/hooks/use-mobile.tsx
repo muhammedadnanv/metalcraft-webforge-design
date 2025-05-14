@@ -4,7 +4,9 @@ import * as React from "react"
 const MOBILE_BREAKPOINT = 768
 
 export function useIsMobile() {
-  const [isMobile, setIsMobile] = React.useState<boolean>(false)
+  const [isMobile, setIsMobile] = React.useState<boolean>(
+    typeof window !== 'undefined' ? window.innerWidth < MOBILE_BREAKPOINT : false
+  )
 
   React.useEffect(() => {
     const checkMobileView = () => {
@@ -14,12 +16,24 @@ export function useIsMobile() {
     // Initial check
     checkMobileView()
     
-    // Add event listener for resize
-    window.addEventListener('resize', checkMobileView)
+    // Add event listener for resize with debounce
+    let resizeTimer: ReturnType<typeof setTimeout>;
+    const handleResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        checkMobileView();
+      }, 100);
+    };
+    
+    window.addEventListener('resize', handleResize)
     
     // Cleanup
-    return () => window.removeEventListener('resize', checkMobileView)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      clearTimeout(resizeTimer);
+    }
   }, [])
 
   return isMobile
 }
+

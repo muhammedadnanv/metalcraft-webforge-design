@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -15,7 +15,26 @@ interface Project {
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const [visibleCategories, setVisibleCategories] = useState<string[]>(["All"]);
   const isMobile = useIsMobile();
+  
+  // For small screens, limit initially visible categories
+  useEffect(() => {
+    if (isMobile) {
+      setVisibleCategories(["All", "Restaurant", "Kitchen Equipment"]);
+    } else {
+      setVisibleCategories(categories);
+    }
+  }, [isMobile]);
+
+  // Toggle additional categories on mobile
+  const toggleCategories = () => {
+    if (visibleCategories.length === categories.length) {
+      setVisibleCategories(["All", "Restaurant", "Kitchen Equipment"]);
+    } else {
+      setVisibleCategories(categories);
+    }
+  };
   
   const projects: Project[] = [
     {
@@ -162,13 +181,13 @@ const Portfolio = () => {
       <div className="container mx-auto">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our <span className="text-accent-orange">Projects</span></h2>
-          <p className="text-steel-blue/80 max-w-2xl mx-auto px-4 sm:px-0">
+          <p className="text-steel-blue/80 max-w-2xl mx-auto px-4 sm:px-0 text-sm sm:text-base">
             Explore our portfolio of custom fabrication projects for commercial kitchens across various industries.
           </p>
         </div>
         
         <div className="flex flex-wrap justify-center gap-2 mb-6 md:mb-8 px-2">
-          {categories.map((category) => (
+          {visibleCategories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
@@ -182,6 +201,24 @@ const Portfolio = () => {
               {category}
             </button>
           ))}
+          
+          {isMobile && visibleCategories.length !== categories.length && (
+            <button 
+              onClick={toggleCategories}
+              className="px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all bg-gray-200 text-steel-blue"
+            >
+              + More
+            </button>
+          )}
+          
+          {isMobile && visibleCategories.length === categories.length && (
+            <button 
+              onClick={toggleCategories}
+              className="px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all bg-gray-200 text-steel-blue"
+            >
+              - Less
+            </button>
+          )}
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-4 sm:px-0">

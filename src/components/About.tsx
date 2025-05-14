@@ -1,6 +1,9 @@
+
 import { CheckCircle } from 'lucide-react';
+
 const About = () => {
-  return <section id="about" className="section-padding bg-white">
+  return (
+    <section id="about" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">About <span className="text-accent-orange">Jawad Metal Works LLC</span></h2>
@@ -16,14 +19,16 @@ const About = () => {
               
               <p>Under the supervision and guidance of highly experienced and technically proficient professionals with vast experience in the field of stainless steel fabrication for more than 20 years, JAWAD Metal Works LLC has served many satisfied customers throughout UAE. Our products have been widely accepted and sought after. JAWAD is committed to high standards of quality and perfection with a sense of aestheticism.</p>
               
-              <p>JAWAD Metal Works LLC is occupying a large warehouse in  Industrial Area,New Lucky rounde Ajman with sufficient machineries and infrastructure. JAWAD Metal Works LLC is proud to have highly experienced and dedicated technicians and skilled workers who can fabricate virtually any custom equipment as per designs and specifications.</p>
+              <p className="hidden sm:block">JAWAD Metal Works LLC is occupying a large warehouse in Industrial Area, New Lucky rounde Ajman with sufficient machineries and infrastructure. JAWAD Metal Works LLC is proud to have highly experienced and dedicated technicians and skilled workers who can fabricate virtually any custom equipment as per designs and specifications.</p>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
-              {["NSF Certified Products", "Custom Sizing Available", "Premium Grade Materials", "Professional Installation", "5-Year Workmanship Warranty", "Compliance with Health Codes"].map((item, index) => <div key={index} className="flex items-center gap-2">
-                  <CheckCircle size={16} className="text-accent-orange flex-shrink-0" />
-                  <span className="text-sm sm:text-base">{item}</span>
-                </div>)}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 mb-6 sm:mb-8">
+              {["NSF Certified", "Custom Sizing", "Premium Materials", "Professional Installation", "5-Year Warranty", "Health Code Compliant"].map((item, index) => (
+                <div key={index} className="flex items-center gap-1 sm:gap-2">
+                  <CheckCircle size={14} className="text-accent-orange flex-shrink-0" />
+                  <span className="text-xs sm:text-sm">{item}</span>
+                </div>
+              ))}
             </div>
             
             <a href="#services" className="btn-secondary inline-block">
@@ -42,6 +47,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

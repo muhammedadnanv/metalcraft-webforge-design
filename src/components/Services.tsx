@@ -23,7 +23,7 @@ const ServiceCard = ({ title, description, icon, className, animationDelay }: Se
         <div className="text-accent-orange">{icon}</div>
       </div>
       <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">{title}</h3>
-      <p className="text-steel-blue/80 text-sm">{description}</p>
+      <p className="text-steel-blue/80 text-xs sm:text-sm">{description}</p>
     </div>
   );
 };
