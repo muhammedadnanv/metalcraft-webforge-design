@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
 
-const categories = ["All", "Restaurant", "Hotel", "Food Truck", "Cafeteria", "Supermarket"];
+const categories = ["All", "Restaurant", "Hotel", "Food Truck", "Cafeteria", "Supermarket", "Kitchen Equipment"];
 
 interface Project {
   id: number;
@@ -87,6 +87,69 @@ const Portfolio = () => {
       category: "Supermarket",
       image: "/lovable-uploads/d50b2289-825f-48c4-8c74-d65f6d3285b0.png",
       description: "High-end supermarket produce display system with multiple tiered shelves"
+    },
+    {
+      id: 11,
+      title: "Commercial Grill Grates",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/9c4d7bd5-b7ea-41cf-97c3-466e5ea41e93.png",
+      description: "Heavy-duty stainless steel grill grates for commercial grills and broilers"
+    },
+    {
+      id: 12,
+      title: "Gas Cooking Range",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/d077d79c-0f63-43b7-9f07-557d6ad354dd.png",
+      description: "Professional dual-burner gas range with griddle plate for commercial kitchens"
+    },
+    {
+      id: 13,
+      title: "Industrial Sink Unit",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/f8b78ff0-20f2-4b9c-b267-e4662376b5e5.png",
+      description: "Stainless steel industrial sink with sturdy construction for restaurant use"
+    },
+    {
+      id: 14,
+      title: "Metal Grating System",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/2e9facc1-5ed4-4949-bf80-3fdb3dcf466e.png",
+      description: "Custom fabricated metal grating for drainage systems and industrial floors"
+    },
+    {
+      id: 15,
+      title: "Multi-Burner Gas Stove",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/a47f1079-193d-45c4-97cc-4e5b3a0985ef.png",
+      description: "Commercial multi-burner gas stove with heavy-duty construction for high-volume cooking"
+    },
+    {
+      id: 16,
+      title: "Commercial Baking Ovens",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/9d8c946e-aa4c-4770-827d-be5b2a133e94.png",
+      description: "Stainless steel commercial baking ovens with multiple racks for bakeries and restaurants"
+    },
+    {
+      id: 17,
+      title: "Mobile Storage Rack",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/2d916249-f6b7-47c9-b0a8-5e3a0f2dfa02.png",
+      description: "Round stainless steel mobile storage rack with casters for kitchen storage solutions"
+    },
+    {
+      id: 18,
+      title: "Industrial Gas Stove",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/cb380529-ef4e-47b7-aefc-021a5d014e28.png",
+      description: "Heavy-duty commercial gas cooking range with backsplash for restaurants and hotels"
+    },
+    {
+      id: 19,
+      title: "Professional Cooking Line",
+      category: "Kitchen Equipment",
+      image: "/lovable-uploads/24999fc7-7e1e-44f6-88eb-7b14d4675609.png",
+      description: "Complete professional cooking line with multiple burners for high-volume food service"
     }
   ];
   
