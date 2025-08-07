@@ -31,23 +31,23 @@ const ServiceCard = ({ title, description, icon, className, animationDelay }: Se
 const Services = () => {
   const services = [
     {
-      title: "Exhaust Hood Systems",
-      description: "Custom ventilation solutions designed for efficiency and code compliance, including Type I and Type II hoods with integrated fire suppression systems.",
+      title: "Commercial Kitchen Equipment Manufacturing",
+      description: "Stainless steel fabrication works for commercial kitchens.",
       icon: <ShowerHead size={24} />
     },
     {
-      title: "Worktables & Prep Stations",
-      description: "Durable stainless steel work surfaces built for your specific space, workflow needs, and budget with customizable shelving and storage options.",
+      title: "Fruit and Vegetable Display for Hypermarkets",
+      description: "Stainless steel display units for fruits and vegetables designed specifically for hypermarkets.",
       icon: <Table2 size={24} />
     },
     {
-      title: "Sinks & Washing Stations",
-      description: "Commercial-grade hand wash sinks, compartment sinks, and pot washing stations with seamless construction and proper drainage systems.",
+      title: " Kitchen Exhaust Works",
+      description: "Exhaust and fresh air ducting solutions for kitchen exhaust hoods.",
       icon: <BadgeDollarSign size={24} />
     },
     {
-      title: "Equipment Stands",
-      description: "Heavy-duty stands for ovens, refrigerators, and other equipment with reinforced construction to support substantial weight requirements.",
+      title: "General Fabrication Works",
+      description: "Fabrication of various stainless steel products as per requirement.",
       icon: <Refrigerator size={24} />
     }
   ];
