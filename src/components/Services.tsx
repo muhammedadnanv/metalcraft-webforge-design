@@ -56,7 +56,7 @@ const Services = () => {
     <section id="services" className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our <span className="text-accent-orange">Services</span></h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Commercial Kitchen Equipment <span className="text-accent-orange">Manufacturing</span></h2>
           <p className="text-steel-blue/80 max-w-2xl mx-auto px-4 sm:px-0">
             We specialize in custom fabrication of commercial kitchen equipment tailored to your specific requirements and specifications.
           </p>
