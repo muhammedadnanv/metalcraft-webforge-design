@@ -121,15 +121,6 @@ const Portfolio = () => {
       image: "/lovable-uploads/d077d79c-0f63-43b7-9f07-557d6ad354dd.png",
       description: "Professional dual-burner Gas operated barbeque with griddle plate for commercial kitchens"
     },
-    <!--
-    {
-      id: 13,
-      title: "Industrial Sink Unit",
-      category: "Kitchen Equipment",
-      image: "/lovable-uploads/f8b78ff0-20f2-4b9c-b267-e4662376b5e5.png",
-      description: "Stainless steel industrial sink with sturdy construction for restaurant use"
-    },
-      -->
     {
       id: 14,
       title: "Floor gratings",
