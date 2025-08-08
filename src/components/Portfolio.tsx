@@ -53,7 +53,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "High-Power Burner",
+      title: "Stock pot stoves",
       category: "Restaurant",
       image: "/lovable-uploads/d48466e8-7820-4afa-8121-c2e5e41076d1.png",
       description: "Professional-grade single burner with brass valves and sturdy frame"
@@ -102,25 +102,26 @@ const Portfolio = () => {
     },
     {
       id: 10,
-      title: "Premium Supermarket Display",
+      title: "Fruit and vegetables display",
       category: "Supermarket",
       image: "/lovable-uploads/d50b2289-825f-48c4-8c74-d65f6d3285b0.png",
       description: "High-end supermarket produce display system with multiple tiered shelves"
     },
     {
       id: 11,
-      title: "Commercial Grill Grates",
+      title: "Grill shelvings",
       category: "Kitchen Equipment",
       image: "/lovable-uploads/9c4d7bd5-b7ea-41cf-97c3-466e5ea41e93.png",
-      description: "Heavy-duty stainless steel grill grates for commercial grills and broilers"
+      description: "Heavy-duty stainless steel grill grates for Grill shelvings"
     },
     {
       id: 12,
-      title: "Gas Cooking Range",
+      title: "Gas operated barbeque",
       category: "Kitchen Equipment",
       image: "/lovable-uploads/d077d79c-0f63-43b7-9f07-557d6ad354dd.png",
-      description: "Professional dual-burner gas range with griddle plate for commercial kitchens"
+      description: "Professional dual-burner Gas operated barbeque with griddle plate for commercial kitchens"
     },
+    <!--
     {
       id: 13,
       title: "Industrial Sink Unit",
@@ -128,19 +129,20 @@ const Portfolio = () => {
       image: "/lovable-uploads/f8b78ff0-20f2-4b9c-b267-e4662376b5e5.png",
       description: "Stainless steel industrial sink with sturdy construction for restaurant use"
     },
+      -->
     {
       id: 14,
-      title: "Metal Grating System",
+      title: "Floor gratings",
       category: "Kitchen Equipment",
       image: "/lovable-uploads/2e9facc1-5ed4-4949-bf80-3fdb3dcf466e.png",
-      description: "Custom fabricated metal grating for drainage systems and industrial floors"
+      description: "Custom fabricated Floor gratings for drainage systems and industrial floors"
     },
     {
       id: 15,
-      title: "Multi-Burner Gas Stove",
+      title: "Commercial cooking range",
       category: "Kitchen Equipment",
       image: "/lovable-uploads/a47f1079-193d-45c4-97cc-4e5b3a0985ef.png",
-      description: "Commercial multi-burner gas stove with heavy-duty construction for high-volume cooking"
+      description: "Commercial  cooking range with heavy-duty construction for high-volume cooking"
     },
     {
       id: 16,
@@ -151,21 +153,21 @@ const Portfolio = () => {
     },
     {
       id: 17,
-      title: "Mobile Storage Rack",
+      title: "Trolleys",
       category: "Kitchen Equipment",
       image: "/lovable-uploads/2d916249-f6b7-47c9-b0a8-5e3a0f2dfa02.png",
-      description: "Round stainless steel mobile storage rack with casters for kitchen storage solutions"
+      description: "Round stainless steel Trolleys with casters for kitchen storage solutions"
     },
     {
       id: 18,
-      title: "Industrial Gas Stove",
+      title: "Commercial cooking range",
       category: "Kitchen Equipment",
       image: "/lovable-uploads/cb380529-ef4e-47b7-aefc-021a5d014e28.png",
       description: "Heavy-duty commercial gas cooking range with backsplash for restaurants and hotels"
     },
     {
       id: 19,
-      title: "Professional Cooking Line",
+      title: "Gas operated Mandi ovens",
       category: "Kitchen Equipment",
       image: "/lovable-uploads/24999fc7-7e1e-44f6-88eb-7b14d4675609.png",
       description: "Complete professional cooking line with multiple burners for high-volume food service"
