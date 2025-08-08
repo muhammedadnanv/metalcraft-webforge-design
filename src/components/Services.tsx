@@ -36,17 +36,17 @@ const Services = () => {
       icon: <ShowerHead size={24} />
     },
     {
-      title: "Fruit and Vegetable Display for Hypermarkets",
+      title: "Fruit and vegetables display for hyper markets and supermarkets",
       description: "Stainless steel display units for fruits and vegetables designed specifically for hypermarkets.",
       icon: <Table2 size={24} />
     },
     {
-      title: " Kitchen Exhaust Works",
+      title: "Kitchen exhaust systems",
       description: "Exhaust and fresh air ducting solutions for kitchen exhaust hoods.",
       icon: <BadgeDollarSign size={24} />
     },
     {
-      title: "General Fabrication Works",
+      title: "General fabrication work for stainless steel and MS",
       description: "Fabrication of various stainless steel products as per requirement.",
       icon: <Refrigerator size={24} />
     }
