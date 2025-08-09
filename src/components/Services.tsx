@@ -54,15 +54,15 @@ const Services = () => {
 
   return (
     <section id="services" className="section-padding bg-gray-50">
-      <div className="container mx-auto">
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our <span className="text-accent-orange">Services</span></h2>
-          <p className="text-steel-blue/80 max-w-2xl mx-auto px-4 sm:px-0">
+      <div className="container mx-auto max-w-7xl">
+        <div className="text-center mb-6 md:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">Our <span className="text-accent-orange">Services</span></h2>
+          <p className="text-steel-blue/80 max-w-3xl mx-auto px-2 sm:px-4 lg:px-0 text-sm sm:text-base">
             We specialize in custom fabrication of commercial kitchen equipment tailored to your specific requirements and specifications.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4 sm:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 px-2 sm:px-4 lg:px-0">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
@@ -75,10 +75,10 @@ const Services = () => {
           ))}
         </div>
         
-        <div className="mt-8 md:mt-12 p-4 sm:p-6 md:p-8 bg-matte-black rounded-lg text-white mx-4 sm:mx-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+        <div className="mt-8 md:mt-12 p-4 sm:p-6 md:p-8 bg-matte-black rounded-lg text-white mx-2 sm:mx-4 lg:mx-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-center">
             <div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Custom Solutions for Every Need</h3>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">Custom Solutions for Every Need</h3>
               <p className="mb-4 text-sm sm:text-base">
                 Don't see what you're looking for? We offer fully customized fabrication services to meet unique requirements and specialized applications.
               </p>
@@ -86,7 +86,7 @@ const Services = () => {
                 Discuss Your Custom Project
               </a>
             </div>
-            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+            <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:gap-4">
               <div className="p-3 sm:p-4 bg-white/10 rounded-lg">
                 <h4 className="font-bold text-accent-orange text-sm sm:text-base">Food Trucks</h4>
                 <p className="text-xs sm:text-sm text-white/80">Complete stainless steel interiors for mobile food services</p>

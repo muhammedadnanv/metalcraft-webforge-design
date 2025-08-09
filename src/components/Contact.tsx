@@ -66,10 +66,10 @@ Message: ${formData.message}`;
 
   return (
     <section id="contact" className="section-padding bg-matte-black text-white">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-          <div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+      <div className="container mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+          <div className="px-2 sm:px-4 lg:px-0">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               Get In <span className="text-accent-orange">Touch</span>
             </h2>
             <p className="mb-6 sm:mb-8 text-white/80 text-sm sm:text-base">
@@ -146,9 +146,9 @@ Message: ${formData.message}`;
             </div>
           </div>
           
-          <div>
+          <div className="px-2 sm:px-4 lg:px-0">
             <div className="bg-white/10 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-lg">
-              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Request a Quote</h2>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Request a Quote</h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>

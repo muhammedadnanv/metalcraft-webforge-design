@@ -5,25 +5,25 @@ import ImageProcessor from './ImageProcessor';
 const About = () => {
   return (
     <section id="about" className="section-padding bg-white">
-      <div className="container mx-auto">
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">About <span className="text-accent-orange">Jawad Metal Works LLC</span></h2>
-          <p className="text-steel-blue/80 max-w-3xl mx-auto px-4 sm:px-0">
+      <div className="container mx-auto max-w-7xl">
+        <div className="text-center mb-6 md:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">About <span className="text-accent-orange">Jawad Metal Works LLC</span></h2>
+          <p className="text-steel-blue/80 max-w-4xl mx-auto px-2 sm:px-4 lg:px-0 text-sm sm:text-base">
             Custom stainless steel fabrication solutions for commercial kitchens and food service industries.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center px-4 sm:px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 items-center px-2 sm:px-4 lg:px-0">
           <div className="order-2 lg:order-1">
-            <div className="text-steel-blue/80 mb-6 space-y-4 text-sm sm:text-base">
+            <div className="text-steel-blue/80 mb-6 space-y-3 sm:space-y-4 text-sm sm:text-base">
               <p>JAWAD Metal Works LLC is a fast growing company engaged in the manufacture, fabrication, supply and installation of stainless steel equipments and furnishings meeting the requirements of commercial and industrial kitchens, food catering units, restaurants, cafeterias, hotels, hospitals, super markets, bakeries, fish processing units etc.</p>
               
               <p>Under the supervision and guidance of highly experienced and technically proficient professionals with vast experience in the field of stainless steel fabrication for more than 20 years, JAWAD Metal Works LLC has served many satisfied customers throughout UAE. Our products have been widely accepted and sought after. JAWAD is committed to high standards of quality and perfection with a sense of aestheticism.</p>
               
-              <p className="hidden sm:block">JAWAD Metal Works LLC is occupying a large warehouse in Industrial Area, New Lucky rounde Ajman with sufficient machineries and infrastructure. JAWAD Metal Works LLC is proud to have highly experienced and dedicated technicians and skilled workers who can fabricate virtually any custom equipment as per designs and specifications.</p>
+              <p className="hidden md:block">JAWAD Metal Works LLC is occupying a large warehouse in Industrial Area, New Lucky rounde Ajman with sufficient machineries and infrastructure. JAWAD Metal Works LLC is proud to have highly experienced and dedicated technicians and skilled workers who can fabricate virtually any custom equipment as per designs and specifications.</p>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 mb-6 sm:mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8">
               {["NSF Certified", "Custom Sizing", "Premium Materials", "Professional Installation", "5-Year Warranty", "Health Code Compliant"].map((item, index) => (
                 <div key={index} className="flex items-center gap-1 sm:gap-2">
                   <CheckCircle size={14} className="text-accent-orange flex-shrink-0" />

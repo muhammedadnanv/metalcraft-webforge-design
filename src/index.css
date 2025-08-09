@@ -56,7 +56,7 @@
   }
 
   .section-padding {
-    @apply py-10 md:py-16 lg:py-24 px-4 md:px-6 lg:px-8;
+    @apply py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 px-4 sm:px-6 lg:px-8;
   }
 
   .reveal-animation {
@@ -76,21 +76,36 @@
   }
 
   .btn-primary {
-    @apply bg-accent-orange text-white px-4 py-2 md:px-5 md:py-2.5 rounded-md font-medium transition-all hover:bg-accent-orange/90 inline-flex items-center justify-center gap-2 min-h-11;
+    @apply bg-accent-orange text-white px-4 py-2.5 sm:px-5 sm:py-3 md:px-6 md:py-3 rounded-md font-medium transition-all hover:bg-accent-orange/90 active:bg-accent-orange/80 inline-flex items-center justify-center gap-2 min-h-11 touch-manipulation;
   }
 
   .btn-secondary {
-    @apply bg-steel-blue text-white px-4 py-2 md:px-5 md:py-2.5 rounded-md font-medium transition-all hover:bg-steel-blue/90 inline-flex items-center justify-center gap-2 min-h-11;
+    @apply bg-steel-blue text-white px-4 py-2.5 sm:px-5 sm:py-3 md:px-6 md:py-3 rounded-md font-medium transition-all hover:bg-steel-blue/90 active:bg-steel-blue/80 inline-flex items-center justify-center gap-2 min-h-11 touch-manipulation;
   }
 
   .btn-outline {
-    @apply border-2 border-accent-orange text-accent-orange px-4 py-2 md:px-5 md:py-2.5 rounded-md font-medium transition-all hover:bg-accent-orange/10 inline-flex items-center justify-center gap-2 min-h-11;
+    @apply border-2 border-accent-orange text-accent-orange px-4 py-2.5 sm:px-5 sm:py-3 md:px-6 md:py-3 rounded-md font-medium transition-all hover:bg-accent-orange/10 active:bg-accent-orange/20 inline-flex items-center justify-center gap-2 min-h-11 touch-manipulation;
   }
   
   /* Responsive container adjustments */
   .container {
-    @apply px-4 sm:px-6 lg:px-8;
+    @apply px-3 sm:px-6 lg:px-8;
     width: 100%;
+  }
+  
+  /* Line clamping utilities */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   
   input, textarea, select, button {
@@ -116,14 +131,25 @@
   text-align: left;
 }
 
-/* Improved touch targets for mobile */
+/* Improved touch targets and mobile experience */
 @media (max-width: 640px) {
   a:not(.btn-primary, .btn-secondary, .btn-outline), 
   button:not(.btn-primary, .btn-secondary, .btn-outline) {
-    @apply py-2 px-2;
+    @apply py-3 px-3 min-h-11;
   }
 
   .container {
-    @apply px-4;
+    @apply px-3;
+  }
+  
+  /* Better text readability on mobile */
+  p, span, div {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
   }
 }

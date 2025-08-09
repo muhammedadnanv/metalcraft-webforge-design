@@ -171,10 +171,10 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="section-padding bg-white">
-      <div className="container mx-auto">
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our <span className="text-accent-orange">Projects</span></h2>
-          <p className="text-steel-blue/80 max-w-2xl mx-auto px-4 sm:px-0 text-sm sm:text-base">
+      <div className="container mx-auto max-w-7xl">
+        <div className="text-center mb-6 md:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">Our <span className="text-accent-orange">Projects</span></h2>
+          <p className="text-steel-blue/80 max-w-2xl mx-auto px-2 sm:px-4 lg:px-0 text-sm sm:text-base">
             Explore our portfolio of custom fabrication projects for commercial kitchens across various industries.
           </p>
         </div>
@@ -185,10 +185,10 @@ const Portfolio = () => {
               key={category}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all",
+                "px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all touch-manipulation",
                 activeCategory === category 
-                  ? "bg-accent-orange text-white" 
-                  : "bg-gray-100 text-steel-blue hover:bg-gray-200"
+                  ? "bg-accent-orange text-white shadow-md" 
+                  : "bg-gray-100 text-steel-blue hover:bg-gray-200 active:bg-gray-300"
               )}
             >
               {category}
@@ -198,7 +198,7 @@ const Portfolio = () => {
           {isMobile && visibleCategories.length !== categories.length && (
             <button 
               onClick={toggleCategories}
-              className="px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all bg-gray-200 text-steel-blue"
+              className="px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all bg-gray-200 text-steel-blue hover:bg-gray-300 touch-manipulation"
             >
               + More
             </button>
@@ -207,39 +207,39 @@ const Portfolio = () => {
           {isMobile && visibleCategories.length === categories.length && (
             <button 
               onClick={toggleCategories}
-              className="px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all bg-gray-200 text-steel-blue"
+              className="px-3 py-2 sm:px-4 sm:py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all bg-gray-200 text-steel-blue hover:bg-gray-300 touch-manipulation"
             >
               - Less
             </button>
           )}
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-4 sm:px-0">
+        <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 px-2 sm:px-4 lg:px-0">
           {filteredProjects.map((project) => (
             <div 
               key={project.id} 
-              className="group overflow-hidden rounded-lg bg-gray-50 border border-gray-200 transition-all hover:shadow-lg"
+              className="group overflow-hidden rounded-lg bg-gray-50 border border-gray-200 transition-all hover:shadow-xl hover:shadow-gray-200/50 hover:-translate-y-1"
             >
-              <div className="h-48 sm:h-56 md:h-64 overflow-hidden">
+              <div className="h-48 sm:h-52 md:h-56 lg:h-60 overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
               </div>
-              <div className="p-3 sm:p-4">
+              <div className="p-3 sm:p-4 md:p-5">
                 <span className="text-xs font-medium bg-accent-orange/10 text-accent-orange px-2 py-1 rounded-full">
                   {project.category}
                 </span>
-                <h3 className="text-lg sm:text-xl font-bold mt-2 mb-1">{project.title}</h3>
-                <p className="text-steel-blue/80 text-xs sm:text-sm">{project.description}</p>
+                <h3 className="text-base sm:text-lg md:text-xl font-bold mt-2 mb-1 line-clamp-2">{project.title}</h3>
+                <p className="text-steel-blue/80 text-xs sm:text-sm line-clamp-3">{project.description}</p>
               </div>
             </div>
           ))}
         </div>
         
-        <div className="text-center mt-8 md:mt-12">
+        <div className="text-center mt-8 md:mt-12 px-2">
           <a href="#contact" className="btn-outline">
             Discuss Your Project
           </a>
