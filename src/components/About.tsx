@@ -1,5 +1,6 @@
 
 import { CheckCircle } from 'lucide-react';
+import ImageProcessor from './ImageProcessor';
 
 const About = () => {
   return (
@@ -38,11 +39,26 @@ const About = () => {
           
           <div className="order-1 lg:order-2 grid grid-cols-2 gap-3 sm:gap-4">
             <div>
-              <img src="/lovable-uploads/43985ca5-73bc-4ba7-a8af-32b29632e08b.png" alt="Commercial Gas Range fabrication" className="rounded-lg shadow-lg h-full w-full object-cover" loading="lazy" />
+              <ImageProcessor 
+                src="/lovable-uploads/43985ca5-73bc-4ba7-a8af-32b29632e08b.png" 
+                alt="Commercial Gas Range fabrication" 
+                className="rounded-lg shadow-lg h-full w-full object-cover" 
+                loading="lazy" 
+              />
             </div>
             <div className="grid grid-rows-2 gap-3 sm:gap-4">
-              <img src="/lovable-uploads/38cf500c-40f0-40bd-8d58-336afe405bed.png" alt="Gas Cooking Station equipment" className="rounded-lg shadow-lg h-full w-full object-cover" loading="lazy" />
-              <img src="/lovable-uploads/54a10075-98d0-497e-a2d4-44952a37ad80.png" alt="Commercial kitchen grill installation" className="rounded-lg shadow-lg h-full w-full object-cover" loading="lazy" />
+              <ImageProcessor 
+                src="/lovable-uploads/38cf500c-40f0-40bd-8d58-336afe405bed.png" 
+                alt="Gas Cooking Station equipment" 
+                className="rounded-lg shadow-lg h-full w-full object-cover" 
+                loading="lazy" 
+              />
+              <ImageProcessor 
+                src="/lovable-uploads/54a10075-98d0-497e-a2d4-44952a37ad80.png" 
+                alt="Commercial kitchen grill installation" 
+                className="rounded-lg shadow-lg h-full w-full object-cover" 
+                loading="lazy" 
+              />
             </div>
           </div>
         </div>
